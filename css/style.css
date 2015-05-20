@@ -1,0 +1,178 @@
+/* Main CSS Stylesheet */
+    
+/* Full width elements - Header and footer */
+header , footer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+    /* Header styling */
+    header{
+        border-bottom: 1px solid #ccc;
+    }
+        /* Navigation position */
+        header nav{
+            width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+    /* Footer style */
+    footer {
+        color: #666;
+        margin-top: 25px;
+        border-top: 1px solid #ccc;
+    }
+
+/* Navigation */
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+    nav ul li a{
+        color: #666;
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        border: 1px solid #fff;
+        transition: all 0.2s;
+    }   
+        nav ul li.active a{
+            border: 1px solid #333;     
+        }
+        nav ul li a:hover{
+            border: 1px solid #47aafd;
+        }
+
+/* Page content */
+body{
+    margin: 0;
+    color: #666;
+    overflow-x: hidden;
+}
+    /* Links */
+    a{
+        color: #008aff;
+        text-decoration: none;
+    }
+        a:hover{
+            color: #47aafd;    
+        }
+    
+    /* Image legends */
+    legend{
+        color: #ccc;
+        font-size: 0.8em;
+        font-style: oblique;
+        margin-top: 5px;
+    }
+
+/* Responsivs container */
+#wrapper{
+    width: 1280px;
+    min-height: 560px;
+    margin: 0 auto;
+}
+    /* Justified paragraphs */
+    #wrapper p{
+        text-align: justify;
+    }
+    
+    /* Responsive images */
+    #wrapper img{
+        max-width: 100%;   
+    }
+
+/* Lines */
+hr{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+/* Tables */
+table{
+    width: 100%;
+}
+    table thead td{
+        font-weight: bold;
+    }
+
+    table tr{
+        border-bottom: 1px solid #ccc;
+    }
+        table tr td{
+            padding: 10px;
+        }
+
+/* Buttons */
+.button{
+    background: #eee;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+    .button:hover{
+        background: #ddd;   
+    }
+    
+    .button:active{
+        background: #ccc;
+        box-shadow: 0px 0px 2px #666;
+    }
+
+/* Button Styles - Outline */
+.button-outline{
+    background: none;
+    border: 1px solid #666
+}
+    .button-outline:hover , .button-outline:active{
+        background: #666;
+        color: #fff;
+    }
+
+/* Button Styles - Blue */
+.button-blue{
+    background: #008aff;
+    color: #fff;
+}
+    .button-blue:hover , .button-blue:active{
+        background: #0072ff;    
+    }
+
+/* Button Styles - Red */
+.button-red{
+    background: #ff4343;
+    color: #fff;
+}
+    .button-red:hover , .button-red:active{
+        background: #f23d3d;    
+    }
+ 
+/* Button Styles - Green */
+.button-green{
+    background: #03ee56;
+    color: #fff;
+}
+    .button-green:hover , .button-green:active{
+        background: #02e452;    
+    }
+
+/* Reponsiveness */
+
+@media screen and (max-width: 1280px){  
+    
+    #wrapper{
+        width: 100%; 
+        padding: 5px;
+    }
+        header nav {
+            width: 100%;    
+        }
+    
+}
+ 
