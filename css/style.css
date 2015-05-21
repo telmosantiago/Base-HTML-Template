@@ -69,7 +69,12 @@ body{
         margin-top: 5px;
     }
 
-/* Responsivs container */
+/* Customization of the burger menu (responsive) */
+.burger-menu{
+    background: #333;
+}
+
+/* Responsive container */
 #wrapper{
     width: 1280px;
     min-height: 560px;
